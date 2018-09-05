@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title> Página inicial - Barber Shop </title>
+    <!-- <link rel="stylesheet" type="text/css" href="./css/reset.css"/>  -->
     <link rel="stylesheet" href="./css/estilo.css"/>
 </head>
 <body>
     
+<div id="interface">
     <header id="cabecalho">
-        <img src="./imagens/logo-barbearia.png" alt="Logo da barbearia" height="120" width="170"/>
+        <img src="./imagens/logo-barbearia.png" id="imagem-logo" alt="Logo da barbearia" height="120" width="170"/>
         <nav id="menu">
-            <ul>
-                <li><a href="index.html"> Home </a></li>
-                <li><a href="servicos.html"> Serviços </a></li>
-                <li><a href="agendamento.html"> Agendamento </a></li>
-                <li><a href="contato.html"> Contato </a></li>
+            <ul type="disc">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="agendamento.html">Agendamento</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -27,45 +29,32 @@
         Com técnicas variadas, tendências e conceitos exclusivos, João conseguiu levar ao cliente o que há de mais clássico e moderno no cenário da barbearia mundial, dentro de um só lugar!
         Foi então que, em agosto de 2016, nasceu a nova Barber Shop, onde o cliente pudesse ter uma nova experiência diferenciada e tratamento exclusivo e personalizado. </p>
 
+        <!-- UMA IMAGEM AQUI -->
+
         <h2> A Estrutura </h2>
 
         <p> Dispomos de todo o conforto necessário para uma experiência única e singular… Desde a hora em que o cliente sai de casa com a hora agendada, até o momento de sair da nossa Barbearia, fazemos questão que a experiência seja sempre marcante.
         Amplo e exclusivo estacionamento para nossos clientes, cadeiras de altíssimo padrão de conforto, totalmente ajustáveis ao corpo do cliente com design de última geração, lavatórios com sistema de massagem corporal (enquanto o cliente lava seus cabelos o seu corpo recebe uma relaxante e deliciosa sessão de massagem), Wi-fi, televisão a cabo, água gelada, café sempre fresquinho e o principal: sua beleza realçada por um time de profissionais que estão em constante capacitação para levar o melhor e mais harmonioso resultado ao seu estilo. </p>
 
-        <h2> O que já realizamos </h2>
+        <!-- UMA IMAGEM AQUI -->
 
-        <table>
-            <thead>
-                <tr> 
-                    <td> Cortes </td>
-                    <td> Barbas </td>
-                    <td> Outros serviços </td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>  </td>
-                    <td>  </td>
-                    <td>  </td>
-                </tr>
-            </tbody>
-        </table>
+        <div id="horario-funcionamento">
+            <h3> Horário de Funcionamento </h3>
+            <h4> Terça à Sábado - 08hrs às 17hrs </h4>
+            <h4> Domingo & Feriados - 08hrs às 12hrs </h4>
+        </div>
 
-       <a href="agendamento.html"> Agende seu horário </a>
+        <div id="botao-agendamento">
+            <a href="agendamento.html" id="agende-horario"> Agende seu horário </a>
+        </div>
 
     </main>
-
-    <div id="horario_funcionamento">
-        <h3> Horário de Funcionamento </h3>
-        <p> Terça à Sábado - 08hrs às 17hrs </p>
-        <p> Domingo & Feriados - 08hrs às 12hrs </p>
-    </div>
 
     <footer id="rodape">
         <p> Copyright &copy; 2018, Barber Shop - Desenvolvido por Lucas Ferreira <br/>
         <a href="http://www.facebook.com" target="_blank"> Facebook </a>
         <a href="http://www.instagram.com" target="_blank"> Instagram </a></p>
     </footer>
-
+</div>
 </body>
 </html>

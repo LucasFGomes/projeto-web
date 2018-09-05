@@ -6,10 +6,13 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> Contato - Barber Shop </title>
+    <link rel="stylesheet" href="./css/estilo.css"/>
 </head>
 <body>
+
+<div id="interface">
     <header id="cabecalho">
-        <img src="./imagens/logo-barbearia.png" alt="Logo da barbearia" height="120" width="170"/>
+        <img src="./imagens/logo-barbearia.png" id="imagem-logo" alt="Logo da barbearia" height="120" width="170"/>
         <nav id="menu">
             <ul>
                 <li><a href="index.html"> Home </a></li>
@@ -20,24 +23,28 @@
         </nav>
     </header>
 
-    <h1> Contato </h1>
+    <main id="conteudo-contato">
 
-    <label for="idNome"> Nome </label> <br/>
-    <input type="text" id="idNome"/> <br/> <br/>
+        <h1> Contato </h1>
 
-    <label for="idEmail"> E-mail </label> <br/>
-    <input type="email" id="idEmail"/>  <br/> <br/>
+        <label for="idNome"> Nome </label> <br/>
+        <input type="text" id="idNome"/> <br/> <br/>
 
-    <label for="idCelular"> Celular </label> <br/>
-    <input type="tel" id="idCelular"/>  <br/> <br/>
+        <label for="idEmail"> E-mail </label> <br/>
+        <input type="email" id="idEmail"/>  <br/> <br/>
 
-    <label for="idAssunto"> Assunto </label> <br/>
-    <input type="text" id="idAssunto"/>  <br/> <br/>
+        <label for="idCelular"> Celular </label> <br/>
+        <input type="tel" id="idCelular"/>  <br/> <br/>
 
-    <label> Descrição </label> <br/>
-    <textarea minlength="5" maxlength="200" cols="30" ></textarea> <br/> <br/>
+        <label for="idAssunto"> Assunto </label> <br/>
+        <input type="text" id="idAssunto"/>  <br/> <br/>
 
-    <button> Enviar </button>
+        <label> Descrição </label> <br/>
+        <textarea minlength="5" maxlength="200" cols="30" ></textarea> <br/> <br/>
+
+        <button> Enviar </button>
+
+    </main>    
 
     <footer id="rodape">
             <p> Copyright &copy; 2018, Barber Shop - Desenvolvido por Lucas Ferreira <br/>
@@ -45,5 +52,6 @@
             <a href="http://www.instagram.com" target="_blank"> Instagram </a></p>
     </footer>
 
+</div>
 </body>
 </html>

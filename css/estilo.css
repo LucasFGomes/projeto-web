@@ -1,0 +1,104 @@
+/* ESTILO DO CABEÇALHO */
+@font-face {
+	font-family: 'FonteLogo';
+	src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+div#interface {
+    width: 900px;
+    margin: -20px auto 10px;
+}
+
+header#cabecalho {
+    background-color: #ced4e9;
+    /*border: 1px solid #c9ab6c;*/
+}
+
+nav#menu {
+    display: block;
+}
+
+nav#menu ul  {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 500px;
+    padding: 20px;
+}
+
+nav#menu li {
+    display: inline-block;
+    padding: 20px;
+    margin: 2px;
+    transition: background-color 1s;
+    border: 10px;
+}
+
+nav#menu li:hover {
+    background-color: #c9ab6c;
+}
+
+/* ESTILO DO CONTEUDO PRINCIPAL */
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+    /*background-color: #cdd6ff;*/
+}
+
+main#conteudo-principal p {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: #2a417e;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: #000000;
+}
+
+div#horario-funcionamento {
+    margin: 10px;
+    padding: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+div#horario-funcionamento h3, h4 {
+    text-align: center;
+}
+
+div#botao-agendamento {
+    background-color: #e7e7e7;
+    transition: background-color 1s;
+    padding: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+div#botao-agendamento:hover {
+    background-color: #c9ab6c;
+}
+
+/* ESTILO DO RODAPE */
+
+footer#rodape {
+    padding: 5px;
+    margin-top: 15px;
+    background-color: #c9ab6c;
+    /*border: 1px solid #c9ab6c;*/
+
+}
+
+footer p, a {
+    text-align: center;
+    padding: 10px;
+}

@@ -11,74 +11,67 @@
 </head>
 <body>
 
-    <header id="cabecalho">
-        <img src="./imagens/logo-barbearia.png" alt="Logo da barbearia" height="120" width="170"/>
-        <nav id="menu">
-            <ul>
-                <li><a href="index.html"> Home </a></li>
-                <li><a href="servicos.html"> Serviços </a></li>
-                <li><a href="agendamento.html"> Agendamento </a></li>
-                <li><a href="contato.html"> Contato </a></li>
-            </ul>
-        </nav>
-    </header>
+<div id="interface">
+	<header id="cabecalho">
+		<img src="./imagens/logo-barbearia.png" id="imagem-logo" alt="Logo da barbearia" height="120" width="170"/>
+		<nav id="menu">
+			<ul>
+					<li><a href="index.html"> Home </a></li>
+					<li><a href="servicos.html"> Serviços </a></li>
+					<li><a href="agendamento.html"> Agendamento </a></li>
+					<li><a href="contato.html"> Contato </a></li>
+				</ul>
+			</nav>
+	</header>
 
-    <h1> Cadastro do agendamento </h1>
-    
-    <form action="">
+	<main id="conteudo-agendamento">
+		<h1> Cadastro do agendamento </h1>
+			
+		<form action="">
 
-        <label for="idNome"> Nome </label> <br/>
-        <input type="text" id="idNome"/ placeholder="João da Silva"> <br/> <br/>
+			<label for="idNome"> Nome </label> <br/>
+			<input type="text" id="idNome"/ placeholder="João da Silva"> <br/> <br/>
 
-        <label for="idEmail"> E-mail </label> <br/>
-        <input type="email" id="idEmail" placeholder="exemplo@gmail.com"/> <br/> <br/>
+			<label for="idEmail"> E-mail </label> <br/>
+			<input type="email" id="idEmail" placeholder="exemplo@gmail.com"/> <br/> <br/>
 
-        <label for="idSenha"> Senha </label> <br/>
-        <input type="password" id="idSenha"/ placeholder="**********" min="5" max="10"> <br/> <br/>
+			<label for="idSenha"> Senha </label> <br/>
+			<input type="password" id="idSenha"/ placeholder="**********" min="5" max="10"> <br/> <br/>
 
-        <label for="idCelular"> Celular </label> <br/>
-        <input type="text" id="idCelular" placeholder="(xx) xxxxx-xxxx"/> <br/> <br/>
+			<label for="idCelular"> Celular </label> <br/>
+			<input type="text" id="idCelular" placeholder="(xx) xxxxx-xxxx"/> <br/> <br/>
 
-        <label for="idData"> Data </label>  <br/>
-        <input type="date" id="idData" placeholder="Data"/> <br/> <br/>
+			<label for="idData"> Data </label>  <br/>
+			<input type="date" id="idData" placeholder="Data"/> <br/> <br/>
 
-        <label for="idTime"> Horário </label>  <br/>
-        <input type="time" id="idTime"/>  <br/> <br/>
+			<label for="idTime"> Horário </label>  <br/>
+			<input type="time" id="idTime"/>  <br/> <br/>
 
-        <label> Profissional </label> <br/>
-        <select>
-            <option> João da Silva </option>
-            <option> Ricardo da Silva </option>
-            <option> José da Silva </option>
-        </select>   <br/> <br/>
+			<label> Profissional </label> <br/>
+			<select>
+				<option> João da Silva </option>
+				<option> Ricardo da Silva </option>
+				<option> José da Silva </option>
+			</select>   <br/> <br/>
 
-        <label> Única Opção </label>   <br/>
-        <select>
-            <option> Corte </option>
-            <option> Barba </option>
-            <option> Progressiva </option>
-            <option> Sobrancelha </option>
-            <option> Corte Infantil </option>
-            <option> Pigmentação </option>
-        </select>   <br/> <br/>
+			<label for="opcao"> Serviço </label>  <br/> 
+			<input type="checkbox"/> Corte   <br/>
+			<input type="checkbox"/> Barba   <br/>
+			<input type="checkbox"/> Progressiva   <br/>
+			<input type="checkbox"/> Sobrancelha  <br/>
+			<input type="checkbox"/> Corte Infantil  <br/> 
+			<input type="checkbox"/> Pigmentação  <br/> <br/>
 
-        <label> Várias Opções </label>  <br/> 
-        <input type="checkbox"/> Corte   <br/>
-        <input type="checkbox"/> Barba   <br/>
-        <input type="checkbox"/> Progressiva   <br/>
-        <input type="checkbox"/> Sobrancelha  <br/>
-        <input type="checkbox"/> Corte Infantil  <br/> 
-        <input type="checkbox"/> Pigmentação  <br/> <br/>
+			<button type="submit"> Enviar </button>
+		</form>
+	</main>
 
-        <button type="submit"> Enviar </button>
-
-    </form>
-
-    <footer id="rodape">
-        <p> Copyright &copy; 2018, Barber Shop - Desenvolvido por Lucas Ferreira <br/>
-        <a href="http://www.facebook.com" target="_blank"> Facebook </a>
-        <a href="http://www.instagram.com" target="_blank"> Instagram </a></p>
-    </footer>
-
+	<footer id="rodape">
+		<p> Copyright &copy; 2018, Barber Shop - Desenvolvido por Lucas Ferreira <br/>
+		<a href="http://www.facebook.com" target="_blank"> Facebook </a>
+		<a href="http://www.instagram.com" target="_blank"> Instagram </a></p>
+	</footer>
+</div>
+		
 </body>
 </html>
