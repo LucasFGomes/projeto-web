@@ -1,17 +1,7 @@
 /* ESTILO DO CABEÇALHO */
-@font-face {
-	font-family: 'FonteLogo';
-	src: url("../_fonts/bubblegum-sans-regular.otf");
-}
-
 div#interface {
     width: 900px;
     margin: -20px auto 10px;
-}
-
-header#cabecalho {
-    background-color: #ced4e9;
-    /*border: 1px solid #c9ab6c;*/
 }
 
 nav#menu {
@@ -24,15 +14,13 @@ nav#menu ul  {
     position: absolute;
     top: -20px;
     left: 500px;
-    padding: 20px;
 }
 
 nav#menu li {
     display: inline-block;
-    padding: 20px;
+    padding: 15px;
     margin: 2px;
     transition: background-color 1s;
-    border: 10px;
 }
 
 nav#menu li:hover {
@@ -42,61 +30,54 @@ nav#menu li:hover {
 /* ESTILO DO CONTEUDO PRINCIPAL */
 
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
-    /*background-color: #cdd6ff;*/
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 {
+    border-bottom: 2px solid #c9ab6c;
+    color: #373738;
 }
 
 main#conteudo-principal p {
     text-align: justify;
     text-indent: 50px;
+    display: inline-block;
 }
 
 a {
     text-decoration: none;
-    color: #2a417e;
+    color: #373738;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
-a:active {
-    color: #000000;
-}
-
-div#horario-funcionamento {
-    margin: 10px;
+div#horario-atendimento {
     padding: 5px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 15px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #373738;
+    color: #c9ab6c;
 }
 
-div#horario-funcionamento h3, h4 {
+#botao {
     text-align: center;
 }
 
-div#botao-agendamento {
-    background-color: #e7e7e7;
-    transition: background-color 1s;
-    padding: 15px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 30px;
+.botao {
+    width: 350px;
     text-align: center;
-    margin-bottom: 20px;
-}
-
-div#botao-agendamento:hover {
+    padding: 15px 20px;
+    margin-top: 15px;
+    border: 1px solid #eee;
+    border-radius: 6px;
     background-color: #c9ab6c;
+    font-size: 18px;
 }
 
 /* ESTILO DO RODAPE */
-
-footer#rodape {
-    padding: 5px;
-    margin-top: 15px;
-    background-color: #c9ab6c;
-    /*border: 1px solid #c9ab6c;*/
-
-}
 
 footer p, a {
     text-align: center;

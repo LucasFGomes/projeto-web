@@ -6,14 +6,17 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> Serviços - Barber Shop </title>
+
+    <link rel="icon" type="image/jpg" href="./imagens/icone-barbearia.png"/>
     <link rel="stylesheet" href="./css/estilo.css"/>
     <link rel="stylesheet" href="./css/servicos.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
 
 <div id="interface">
     <header id="cabecalho">
-        <img src="./imagens/logo-barbearia.png" id="imagem-logo" alt="Logo da barbearia" height="120" width="170"/>
+        <img src="./imagens/logo-barbearia.png" id="imagem-logo" alt="Logo da barbearia" height="130" width="180"/>
         <nav id="menu">
             <ul>
                 <li><a href="index.html"> Home </a></li>
@@ -27,32 +30,57 @@
     <main id="conteudo-servicos">
         <h1> Nossos Serviços </h1>
 
-        <label> Corte </label> <br/>
-        <img src="./imagens/servicos-corte.jpg" id="corte" alt="Serviço de corte" height="150" width="150"/> <br/> 
-        <p> Preço: R$25,00 </p>
+        <div id="lista-servicos">
+            <ul>
+                <li id="corte">
+                    <figure>
+                        <figcaption> Corte </figcaption>
+                        <img src="./imagens/servicos-corte.jpg" id="corte" alt="Serviço de corte" height="150" width="150"/>
+                    </figure>
+                    <p> Preço: R$15,00 </p>
+                </li>
+                <li id="barba">
+                    <figure>
+                        <figcaption> Barba </figcaption>
+                        <img src="./imagens/servicos-barba.jpg" id="barba" alt="Serviço de barba" height="150" width="150"/>
+                    </figure>
+                    <p> Preço: R$10,00 </p>
+                </li>
+                <li id="progressiva">
+                    <figure>
+                        <figcaption> Progressiva </figcaption>
+                        <img src="./imagens/servicos-progressiva.jpg" id="progressiva" alt="Serviço de progressiva" height="150" width="150"/>
+                    </figure>
+                    <p> Preço: R$30,00 </p>
+                </li>
+    
+                <li id="sobrancelha">
+                    <figure>
+                        <figcaption> Sobrancelha </figcaption>
+                        <img src="./imagens/servicos-sobrancelha.jpg" alt="Serviço de sobrancelha" height="150" width="150"/>
+                    </figure>
+                    <p> Preço: R$10,00 </p>  
+                </li>
+                <li id="infantil">
+                    <figure>
+                        <figcaption> Corte Infantil </figcaption>
+                        <img src="./imagens/servicos-infantil.jpg" alt="Serviço de corte infantil" height="150" width="150"/>
+                    </figure>
+                <p> Preço: R$10,00 </p>  
+                </li>
+                <li id="pigmentacao">
+                    <figure>
+                        <figcaption> Pigmentação </figcaption>
+                        <img src="./imagens/servicos-pigmentacao.jpg" alt="Serviço de pigmentação" height="150" width="150"/>
+                    </figure>
+                    <p> Preço: R$35,00 </p>
+                </li>
+            </ul>
+        </div>
 
-        <label> Barba </label> <br/>
-        <img src="./imagens/servicos-barba.jpg" id="barba" alt="Serviço de barba" height="150" width="150"/> <br/>
-        <p> Preço: R$20,00 </p>
-
-        <label> Progressiva </label> <br/> 
-        <img src="./imagens/servicos-progressiva.jpg" id="progressiva" alt="Serviço de progressiva" height="150" width="150"/> <br/> 
-        <p> Preço: R$30,00 </p>
-
-        <label> Sobrancelha </label> <br/> 
-        <img src="./imagens/servicos-sobrancelha.jpg" alt="Serviço de sobrancelha" height="150" width="150"/> <br/> 
-        <p> Preço: R$20,00 </p>
-
-        <label> Corte Infantil </label> <br/> 
-        <img src="./imagens/servicos-infantil.jpg" alt="Serviço de corte infantil" height="150" width="150"/> <br/> 
-        <p> Preço: R$20,00 </p>
-
-        <label> Pigmentação </label> <br/> 
-        <img src="./imagens/servicos-pigmentacao.jpg" alt="Serviço de pigmentação" height="150" width="150"/> <br/> 
-        <p> Preço: R$50,00 </p>
-        </ul>
-
-        <a href="agendamento.html"> Agende seu horário </a>
+        <div id="botao">
+            <a href="agendamento.html"> <button class="botao"> Agende seu horário </button> </a>
+        </div>
     </main>
 
     <footer id="rodape">
