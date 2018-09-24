@@ -1,9 +1,4 @@
 /* ESTILO DO CABEÇALHO */
-div#interface {
-    width: 900px;
-    margin: -20px auto 10px;
-}
-
 nav#menu {
     display: block;
 }
@@ -31,6 +26,14 @@ nav#menu li:hover {
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-image: url('../imagens/fundo-animado.gif');
+}
+
+div#interface {
+    width: 900px;
+    margin: -20px auto 5px;
+    background-color: #eee;
+    padding: 10px;
 }
 
 h1, h2 {
@@ -41,12 +44,35 @@ h1, h2 {
 main#conteudo-principal p {
     text-align: justify;
     text-indent: 50px;
-    display: inline-block;
+}
+
+figure#barbearia {
+    background-color: #c9ab6c;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+
+figure#estrutura {
+    background-color: #c9ab6c;
+    text-align: center;
+    border-radius: 5px;
+    float: right;
+    margin-top: 0px; 
+}
+
+figcaption {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
 }
 
 a {
     text-decoration: none;
     color: #373738;
+    padding: 10px;
 }
 
 a:hover {
@@ -55,11 +81,21 @@ a:hover {
 
 div#horario-atendimento {
     padding: 5px;
-    margin-top: 15px;
-    font-size: 20px;
-    text-align: center;
     background-color: #373738;
     color: #c9ab6c;
+    margin-top: 50px;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+div#localizacao {
+    background-color: #c9ab6c;
+    color: #373738;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+    padding: 5px;
 }
 
 #botao {
@@ -79,7 +115,22 @@ div#horario-atendimento {
 
 /* ESTILO DO RODAPE */
 
-footer p, a {
+footer p {
     text-align: center;
     padding: 10px;
 }
+
+.rede-social a {
+   height: 32px;
+   width: 32px;
+
+   /* image replacement */
+   display: block;
+   text-indent: -9999px;
+ }
+
+ .rede-social a[href*="facebook.com"] {
+   background-image: url('../imagens/facebook.png');
+   background-repeat: no-repeat;
+ }
+
