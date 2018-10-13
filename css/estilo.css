@@ -13,7 +13,7 @@ nav#menu ul  {
 
 nav#menu li {
     display: inline-block;
-    padding: 15px;
+    padding: 10px;
     margin: 2px;
     transition: background-color 1s;
 }
@@ -46,21 +46,21 @@ main#conteudo-principal p {
     text-indent: 50px;
 }
 
-figure#barbearia {
+figure.index-imagens {
     background-color: #c9ab6c;
     text-align: center;
     border-radius: 5px;
+}
+
+figure#barbearia {
     margin-left: auto;
     margin-right: auto;
     width: 500px;
 }
 
 figure#estrutura {
-    background-color: #c9ab6c;
-    text-align: center;
-    border-radius: 5px;
     float: right;
-    margin-top: 0px; 
+    margin-top: auto;
 }
 
 figcaption {
@@ -98,11 +98,11 @@ div#localizacao {
     padding: 5px;
 }
 
-#botao {
+div#botao {
     text-align: center;
 }
 
-.botao {
+button.botao {
     width: 350px;
     text-align: center;
     padding: 15px 20px;
@@ -114,23 +114,39 @@ div#localizacao {
 }
 
 /* ESTILO DO RODAPE */
-
-footer p {
-    text-align: center;
-    padding: 10px;
+footer ul {
+    padding-left: 0px;
 }
 
-.rede-social a {
-   height: 32px;
-   width: 32px;
+footer#rodape {
+    text-align: center;
+    font-size: 15px;
+    padding-top: 15px; 
+}
 
-   /* image replacement */
-   display: block;
-   text-indent: -9999px;
- }
+ul.rede-social li {
+    display: inline;
+}
 
- .rede-social a[href*="facebook.com"] {
-   background-image: url('../imagens/facebook.png');
-   background-repeat: no-repeat;
- }
+ul.rede-social img {
+    height: 25px;
+    width: 25px;
+    padding: 5px;
+    border-radius: 5px;
+}
 
+ul.rede-social img#facebook {
+    background-color: #2372a3;
+}
+
+ul.rede-social img#youtube {
+    background-color: #b00;
+}
+
+ul.rede-social img#instagram {
+    background-color: #3f729b;
+}
+
+ul.rede-social img#twitter {
+    background-color: #0084b4;
+}

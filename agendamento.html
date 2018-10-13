@@ -10,7 +10,6 @@
 	<link rel="stylesheet" href="./css/estilo.css"/>
 	<link rel="stylesheet" href="./css/agendamento.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
 </head>
 <body>
 
@@ -22,7 +21,7 @@
 					<li><a href="index.html"> Home </a></li>
 					<li><a href="servicos.html"> Serviços </a></li>
 					<li><a href="agendamento.html"> Agendamento </a></li>
-					<li><a href="contato.html"> Contato </a></li>
+					<li><a href="fale-conosco.html"> Fale Conosco </a></li>
 				</ul>
 			</nav>
 	</header>
@@ -58,23 +57,48 @@
 			</select>   <br/> <br/>
 
 			<label> Serviço </label>  <br/> 
-			<input type="checkbox" id="corte"/> <label for="corte"> Corte </label>   <br/>
-			<input type="checkbox" id="barba"/> <label for="barba"> Barba </label>   <br/>
-			<input type="checkbox" id="progressiva"/> <label for="progressiva"> Progressiva   <br/>
-			<input type="checkbox" id="sobrancelha"/> <label for="sobrancelha"> Sobrancelha </label>  <br/>
-			<input type="checkbox" id="corte-infantil"/> <label for="corte-infantil"> Corte Infantil </label>  <br/> 
-			<input type="checkbox" id="pigmentacao"/> <label for="pigmentacao"> Pigmentação </label>  <br/> <br/>
+			<input type="checkbox" id="corte" value="15"/> <label for="corte"> Corte </label>   <br/>
+			<input type="checkbox" id="barba" value="10"/> <label for="barba"> Barba </label>   <br/>
+			<input type="checkbox" id="progressiva" value="30"/> <label for="progressiva"> Progressiva   <br/>
+			<input type="checkbox" id="sobrancelha" value="10"/> <label for="sobrancelha"> Sobrancelha </label>  <br/>
+			<input type="checkbox" id="corte-infantil" value="10"/> <label for="corte-infantil"> Corte Infantil </label>  <br/> 
+			<input type="checkbox" id="pigmentacao" value="35"/> <label for="pigmentacao"> Pigmentação </label>  <br/> <br/>
 
-			<button type="submit"> Enviar </button>
+			<label>Total a pagar R$ </label><input type="text" id="total-pagar" size="3" value="0" readonly/>  <br/> <br/>
+
+			<button type="submit" id="botao-enviar"> Enviar </button>
 		</form>
 	</main>
 
 	<footer id="rodape">
-		<p> Copyright &copy; 2018, Barber Shop - Desenvolvido por Lucas Ferreira <br/>
-		<a href="http://www.facebook.com" target="_blank"> Facebook </a>
-		<a href="http://www.instagram.com" target="_blank"> Instagram </a></p>
+		<p>Copyright &copy; 2018, Barber Shop - Desenvolvido por Lucas Ferreira</p>
+		
+		<ul class="rede-social">
+			<li> 
+				<a href="http://www.facebook.com" target="_blank"> 
+					<img src="./imagens/icone-facebook.png" alt="icone-facebook"/> 
+				</a> 
+			</li>
+			<li> 
+				<a href="http://web.whatsapp.com" target="_blank"> 
+					<img src="./imagens/icone-whatsapp.png" alt="icone-whatsapp"/>
+				</a> 
+			</li>
+			<li> 
+				<a href="http://www.instagram.com" target="_blank"> 
+					<img src="./imagens/icone-instagram.png" alt="icone-instagram"/>
+				</a> 
+			</li>
+			<li> 
+				<a href="http://www.twitter.com" target="_blank"> 
+					<img src="./imagens/icone-twitter.png" alt="icone-twitter"/>
+				</a> 
+			</li>
+		</ul>
 	</footer>
 </div>
+
+<script src="./js/script.js"></script>
 		
 </body>
 </html>
