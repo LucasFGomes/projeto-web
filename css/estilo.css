@@ -16,6 +16,7 @@ nav#menu li {
     padding: 10px;
     margin: 2px;
     transition: background-color 1s;
+    font-weight: bold;
 }
 
 nav#menu li:hover {
@@ -106,7 +107,6 @@ button.botao {
     width: 350px;
     text-align: center;
     padding: 15px 20px;
-    margin-top: 15px;
     border: 1px solid #eee;
     border-radius: 6px;
     background-color: #c9ab6c;
@@ -121,7 +121,7 @@ footer ul {
 footer#rodape {
     text-align: center;
     font-size: 15px;
-    padding-top: 15px; 
+    margin-top: 30px;
 }
 
 ul.rede-social li {

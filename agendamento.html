@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,7 @@
 
 	<link rel="icon" type="image/jpg" href="./imagens/icone-barbearia.png"/>
 	<link rel="stylesheet" href="./css/estilo.css"/>
-	<link rel="stylesheet" href="./css/agendamento.css"/>
+	<link rel="stylesheet" href="./css/form.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
@@ -29,76 +29,83 @@
 	<main id="conteudo-agendamento">
 		<h1> Cadastro do agendamento </h1>
 			
-		<form action="enviar.html">
+		<form id="form-agendamento" onsubmit="agendar();">
 
-			<label for="idNome"> Nome </label> <br/>
-			<input type="text" id="idNome"/ placeholder="João da Silva"> <br/> <br/>
+			<fieldset id="dados-pessoais">
+				<legend> Dados pessoais </legend>
+				<label for="idNome"> Nome </label> <br/>
+				<input type="text" id="idNome" placeholder="João da Silva" size="30" required> <br/> <br/>
 
-			<label for="idEmail"> E-mail </label> <br/>
-			<input type="email" id="idEmail" placeholder="exemplo@gmail.com"/> <br/> <br/>
+				<label for="idEmail"> E-mail </label> <br/>
+				<input type="email" id="idEmail" placeholder="exemplo@gmail.com" required/> <br/> <br/>
 
-			<label for="idSenha"> Senha </label> <br/>
-			<input type="password" id="idSenha"/ placeholder="**********" min="5" max="10"> <br/> <br/>
+				<label for="idSenha"> Senha </label> <br/>
+				<input type="password" id="idSenha" placeholder="**********" min="5" max="10" required> <br/> <br/>
 
-			<label for="idCelular"> Celular </label> <br/>
-			<input type="text" id="idCelular" placeholder="(xx) xxxxx-xxxx"/> <br/> <br/>
+				<label for="idCelular"> Celular </label> <br/>
+				<input type="text" id="idCelular" placeholder="(00) 00000-0000" required/> <br/> <br/>
+			</fieldset>
 
-			<label for="idData"> Data </label>  <br/>
-			<input type="date" id="idData" placeholder="Data"/> <br/> <br/>
+			<fieldset id="dados-agendamento">
+				<legend> Dados do agendamento </legend>
+				<label for="idData"> Data </label>  <br/>
+				<input type="date" id="idData" required/> <br/> <br/>
 
-			<label for="idTime"> Horário </label>  <br/>
-			<input type="time" id="idTime"/>  <br/> <br/>
+				<label for="idTime"> Horário </label>  <br/>
+				<input type="time" id="idTime" required/>  <br/> <br/>
 
-			<label> Profissional </label> <br/>
-			<select>
-				<option> João da Silva </option>
-				<option> Ricardo da Silva </option>
-				<option> José da Silva </option>
-			</select>   <br/> <br/>
+				<label> Profissional </label> <br/>
+				<select>
+					<option> João da Silva </option>
+					<option> Ricardo da Silva </option>
+					<option> José da Silva </option>
+				</select>   <br/> <br/>
 
-			<label> Serviço </label>  <br/> 
-			<input type="checkbox" id="corte" value="15"/> <label for="corte"> Corte </label>   <br/>
-			<input type="checkbox" id="barba" value="10"/> <label for="barba"> Barba </label>   <br/>
-			<input type="checkbox" id="progressiva" value="30"/> <label for="progressiva"> Progressiva   <br/>
-			<input type="checkbox" id="sobrancelha" value="10"/> <label for="sobrancelha"> Sobrancelha </label>  <br/>
-			<input type="checkbox" id="corte-infantil" value="10"/> <label for="corte-infantil"> Corte Infantil </label>  <br/> 
-			<input type="checkbox" id="pigmentacao" value="35"/> <label for="pigmentacao"> Pigmentação </label>  <br/> <br/>
+				<label> Serviço </label>  <br/> 
+				<input type="checkbox" id="corte" value="15"/> <label for="corte"> Corte </label>   <br/>
+				<input type="checkbox" id="barba" value="10"/> <label for="barba"> Barba </label>   <br/>
+				<input type="checkbox" id="progressiva" value="30"/> <label for="progressiva"> Progressiva   <br/>
+				<input type="checkbox" id="sobrancelha" value="10"/> <label for="sobrancelha"> Sobrancelha </label>  <br/>
+				<input type="checkbox" id="corte-infantil" value="10"/> <label for="corte-infantil"> Corte Infantil </label>  <br/> 
+				<input type="checkbox" id="pigmentacao" value="35"/> <label for="pigmentacao"> Pigmentação </label>  <br/> <br/>
 
-			<label>Total a pagar R$ </label><input type="text" id="total-pagar" size="3" value="0" readonly/>  <br/> <br/>
+				<label>Total a pagar R$ </label><input type="text" id="total-pagar" size="3" value="0" readonly/>  <br/> <br/>
+			</fieldset>
 
-			<button type="submit" id="botao-enviar"> Enviar </button>
+			<input type="reset" id="botao-redefinir"/>
+			<input type="submit" id="botao-enviar" value="Agendar"/>  
 		</form>
 	</main>
 
 	<footer id="rodape">
 		<p>Copyright &copy; 2018, Barber Shop - Desenvolvido por Lucas Ferreira</p>
-		
+
 		<ul class="rede-social">
 			<li> 
 				<a href="http://www.facebook.com" target="_blank"> 
-					<img src="./imagens/icone-facebook.png" alt="icone-facebook"/> 
+					<img src="./imagens/facebook.png" alt="icone-facebook" id="facebook" /> 
 				</a> 
 			</li>
 			<li> 
-				<a href="http://web.whatsapp.com" target="_blank"> 
-					<img src="./imagens/icone-whatsapp.png" alt="icone-whatsapp"/>
+				<a href="http://www.youtube.com" target="_blank"> 
+					<img src="./imagens/youtube.png" alt="icone-youtube" id="youtube"/>
 				</a> 
 			</li>
 			<li> 
 				<a href="http://www.instagram.com" target="_blank"> 
-					<img src="./imagens/icone-instagram.png" alt="icone-instagram"/>
+					<img src="./imagens/instagram.png" alt="icone-instagram" id="instagram"/>
 				</a> 
 			</li>
 			<li> 
 				<a href="http://www.twitter.com" target="_blank"> 
-					<img src="./imagens/icone-twitter.png" alt="icone-twitter"/>
+					<img src="./imagens/twitter.png" alt="icone-twitter" id="twitter"/>
 				</a> 
 			</li>
 		</ul>
 	</footer>
 </div>
 
-<script src="./js/script.js"></script>
+<script type="text/javascript" src="./js/script.js"></script>
 		
 </body>
 </html>

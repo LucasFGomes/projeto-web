@@ -1,14 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> Contato - Barber Shop </title>
+    <title> Fale Conosco - Barber Shop </title>
 
     <link rel="icon" type="image/jpg" href="./imagens/icone-barbearia.png"/>
     <link rel="stylesheet" href="./css/estilo.css"/>
+    <link rel="stylesheet" href="./css/form.css"/>
 
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
@@ -30,51 +31,56 @@
     <main id="conteudo-contato">
 
         <h1> Fale Conosco </h1>
+        <form onsubmit="alert('Enviado com sucesso');">
+            <fieldset>
+                <legend> Deixe seu recado/dúvida </legend>
+                <label for="idNome"> Nome </label> <br/>
+                <input type="text" id="idNome" placeholder="João da Silva" size="30" required/> <br/> <br/>
 
-        <label for="idNome"> Nome </label> <br/>
-        <input type="text" id="idNome"/> <br/> <br/>
+                <label for="idEmail"> E-mail </label> <br/>
+                <input type="email" id="idEmail" placeholder="exemplo@gmail.com" required/>  <br/> <br/>
 
-        <label for="idEmail"> E-mail </label> <br/>
-        <input type="email" id="idEmail"/>  <br/> <br/>
+                <label for="idCelular"> Celular </label> <br/>
+                <input type="tel" id="idCelular" placeholder="(00) 00000-0000"/>  <br/> <br/>
 
-        <label for="idCelular"> Celular </label> <br/>
-        <input type="tel" id="idCelular"/>  <br/> <br/>
+                <label for="idAssunto"> Assunto </label> <br/>
+                <input type="text" id="idAssunto" placeholder="Sua pergunta" size="30" required/>  <br/> <br/>
 
-        <label for="idAssunto"> Assunto </label> <br/>
-        <input type="text" id="idAssunto"/>  <br/> <br/>
+                <label for="idTexto"> Descrição </label> <br/>
+                <textarea id="idTexto" minlength="5" maxlength="300" cols="30" rows="5" placeholder="Seu texto..." required></textarea> <br/> <br/>
+            </fieldset>
 
-        <label> Descrição </label> <br/>
-        <textarea minlength="5" maxlength="200" cols="30" ></textarea> <br/> <br/>
-
-        <button> Enviar </button>
+            <input type="reset" id="botao-redefinir"/>
+            <input type="submit" id="botao-enviar"/>
+        </form>
 
     </main>    
 
     <footer id="rodape">
         <p>Copyright &copy; 2018, Barber Shop - Desenvolvido por Lucas Ferreira</p>
-    
+
         <ul class="rede-social">
             <li> 
                 <a href="http://www.facebook.com" target="_blank"> 
-                    <img src="./imagens/icone-facebook.png" alt="icone-facebook"/> 
+                    <img src="./imagens/facebook.png" alt="icone-facebook" id="facebook" /> 
                 </a> 
             </li>
             <li> 
-                <a href="http://web.whatsapp.com" target="_blank"> 
-                    <img src="./imagens/icone-whatsapp.png" alt="icone-whatsapp"/>
+                <a href="http://www.youtube.com" target="_blank"> 
+                    <img src="./imagens/youtube.png" alt="icone-youtube" id="youtube"/>
                 </a> 
             </li>
             <li> 
                 <a href="http://www.instagram.com" target="_blank"> 
-                    <img src="./imagens/icone-instagram.png" alt="icone-instagram"/>
+                    <img src="./imagens/instagram.png" alt="icone-instagram" id="instagram"/>
                 </a> 
             </li>
             <li> 
                 <a href="http://www.twitter.com" target="_blank"> 
-                    <img src="./imagens/icone-twitter.png" alt="icone-twitter"/>
+                    <img src="./imagens/twitter.png" alt="icone-twitter" id="twitter"/>
                 </a> 
             </li>
-        </ul>
+        </ul>    
     </footer>
 </div>
 </body>
